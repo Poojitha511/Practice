@@ -25,6 +25,7 @@ public class Student {
     @PostMapping("/dept")
     public Dept saveDept(@RequestBody Dept dept){
         log.info("we are in controller and in saveDept method now");
+        log.info("we are in controller and in saveDept method");
         return deptServiceInterface.saveDept(dept);
     }
 
@@ -33,4 +34,5 @@ public class Student {
         return deptServiceInterface.fetchDeptName(deptName);
     }
 }
+
 
